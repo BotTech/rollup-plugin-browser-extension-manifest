@@ -1,1 +1,11 @@
-{}
+{
+  "overrides": [
+    {
+      "files": ".husky/*",
+      "options": {
+        "parser": "sh",
+        "plugins": ["prettier-plugin-sh"]
+      }
+    }
+  ]
+}

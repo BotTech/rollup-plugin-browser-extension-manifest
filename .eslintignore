@@ -1,4 +1,8 @@
-.idea
 **/dist
 **/node_modules
 **/test/**/output
+
+.idea
+.husky/_
+pnpm-lock.yaml
+**/.*ignore

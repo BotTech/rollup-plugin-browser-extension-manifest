@@ -20,6 +20,7 @@
   "scripts": {
     "build": "rollup --config",
     "lint": "eslint . --fix --cache && prettier --write .",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -28,9 +29,14 @@
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "2.4.1",
     "rollup": "^2.60.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "prettier-plugin-sh": "^0.7.1"
   }
 }

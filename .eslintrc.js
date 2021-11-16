@@ -1,37 +1,20 @@
 module.exports = {
-  "env": {
-    "es2021": true,
-    "node": true
+  env: {
+    es2021: true,
+    node: true,
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 13,
-    "sourceType": "module"
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: 13,
+    sourceType: "module",
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "indent": [
-      "error",
-      4
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ]
-  }
+  plugins: ["@typescript-eslint"],
+  rules: {
+    "comma-dangle": ["error", "never"],
+    indent: ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    quotes: ["error", "double"],
+    semi: ["error", "never"],
+  },
 };

@@ -1,0 +1,14 @@
+{
+  "name": "rollup-plugin-browser-extension-manifest",
+  "version": "1.0.0",
+  "description": "\uD83C\uDF63 A Rollup plugin that processes browser extension manifests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rollup-plugin"
+  ],
+  "author": "Jason Pickens",
+  "license": "ISC"
+}

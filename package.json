@@ -1,7 +1,7 @@
 {
   "name": "@bottechnz/rollup-plugin-browser-extension-manifest",
   "version": "1.0.0",
-  "description": "\uD83C\uDF63 A Rollup plugin that processes browser extension manifests.",
+  "description": "🍣 A Rollup plugin that processes browser extension manifests.",
   "keywords": [
     "rollup-plugin",
     "browser extension"
@@ -11,12 +11,26 @@
   },
   "license": "ISC",
   "author": "Jason Pickens",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/BotTech/rollup-plugin-browser-extension-manifest"
   },
   "scripts": {
+    "build": "rollup --config",
+    "lint": "eslint . --fix --cache && prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.4.1",
+    "rollup": "^2.60.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   }
 }
